@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body .background-img {
+  background-image: url("../images/bg.jpg");
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .background-img main {
+  position: absolute;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+  background-position: center;
+  width: 80vw;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3vw;
+}
+
+body .background-img main .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2vw;
+  width: 32vw;
+  color: white;
+  font-family: poppins;
+  font-size: 1vw;
+}
+
+body .background-img main .text span {
+  font-size: 2.5vw;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+
+body .background-img main .form-content .trial {
+  color: white;
+  background-color: #6055a5;
+  padding: 0.5vw;
+  width: 30vw;
+  text-align: center;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: 0 0.25vw rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25vw rgba(0, 0, 0, 0.2);
+  font-family: poppins;
+}
+
+body .background-img main .form-content .trial span {
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+body .background-img main .form-content .trial:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+body .background-img main .form-content form {
+  background-color: white;
+  padding: 1vw 0.5vw;
+  border-radius: 1vw;
+  margin-top: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2vw;
+  -webkit-box-shadow: 0 0.25vw rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.25vw rgba(0, 0, 0, 0.15);
+  font-family: poppins;
+}
+
+body .background-img main .form-content form input {
+  width: 25vw;
+  outline: none;
+  border: 0.15vw solid lightgray;
+  height: 2vw;
+  border-radius: 0.5vw;
+  margin: 1vw auto;
+  font-family: poppins;
+}
+
+body .background-img main .form-content form input:focus {
+  border: 0.15vw solid darkgray;
+  background-image: none;
+}
+
+body .background-img main .form-content form .error-style-input {
+  border-color: red;
+  background-image: url("../images/warning-sign.svg");
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  background-size: 1.5vw;
+}
+
+body .background-img main .form-content form .error-style-input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .error-style-input:-ms-input-placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .error-style-input::-ms-input-placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .error-style-input::placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .success-style-input {
+  border-color: green;
+  background-image: url("../images/check-symbol.svg");
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  background-size: 1.5vw;
+}
+
+body .background-img main .form-content form .success-style-input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .success-style-input:-ms-input-placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .success-style-input::-ms-input-placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .success-style-input::placeholder {
+  color: transparent;
+}
+
+body .background-img main .form-content form .error-style-div {
+  color: red;
+  width: 25vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+}
+
+body .background-img main .form-content form .success-style-div {
+  color: green;
+  width: 25vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+}
+
+body .background-img main .form-content form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #38cc8c;
+  color: white;
+  padding: 1vw;
+  border: none;
+  border-radius: 0.5vw;
+  width: 25vw;
+  margin: 0 auto;
+  font-size: 1vw;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0.25vw rgba(0, 100, 0, 0.6);
+          box-shadow: 0 0.25vw rgba(0, 100, 0, 0.6);
+  font-family: poppins;
+}
+
+body .background-img main .form-content form button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+body .background-img main .form-content section {
+  text-align: center;
+  color: lightgray;
+  margin: 1vw auto 0 auto;
+  font-size: 0.75vw;
+  font-family: poppins;
+  font-weight: bold;
+  width: 30vw;
+}
+
+body .background-img main .form-content section span {
+  color: #ff7a7a;
+  cursor: pointer;
+}
+
+body .background-img footer {
+  bottom: 1vw;
+  color: darkgray;
+  position: absolute;
+  background-color: white;
+  padding: 1vw;
+  font-size: 1vw;
+  font-family: poppins;
+  border-radius: 1vw;
+  -webkit-box-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.2);
+}
+
+body .background-img footer span {
+  color: dodgerblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 426px) {
+  body .background-img main {
+    display: block;
+  }
+  body .background-img main .text span {
+    font-size: 6vw;
+    width: 70vw;
+    text-align: center;
+  }
+  body .background-img main .text {
+    font-size: 3vw;
+    width: 70vw;
+    text-align: center;
+    margin: 2vw auto;
+  }
+  body .background-img main .form-content .trial {
+    margin: 3.5vw auto;
+    font-size: 3.5vw;
+    width: 50vw;
+    border-radius: 2vw;
+    padding: 2vw;
+    -webkit-box-shadow: 0 0.65vw rgba(96, 85, 165, 0.6);
+            box-shadow: 0 0.65vw rgba(96, 85, 165, 0.6);
+  }
+  body .background-img main .form-content .trial span {
+    font-size: 3.5vw;
+  }
+  body .background-img main .form-content form {
+    margin: 2vw auto;
+    width: 70vw;
+    border-radius: 2vw;
+    padding: 5vw 0;
+    -webkit-box-shadow: 0 0.65vw rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.65vw rgba(0, 0, 0, 0.2);
+  }
+  body .background-img main .form-content form input {
+    width: 60vw;
+    height: 7vw;
+    border-radius: 1.5vw;
+    margin-bottom: 3vw;
+  }
+  body .background-img main .form-content form .error-style-input {
+    background-size: 5vw;
+  }
+  body .background-img main .form-content form .success-style-input {
+    background-size: 5vw;
+  }
+  body .background-img main .form-content form .error-style-div {
+    color: red;
+    width: 60vw;
+    margin: 0 auto;
+    font-size: 3vw;
+  }
+  body .background-img main .form-content form .success-style-div {
+    color: green;
+    width: 60vw;
+    margin: 0 auto;
+    font-size: 3vw;
+  }
+  body .background-img main .form-content form button {
+    margin: 1vw auto;
+    width: 60vw;
+    font-size: 3.5vw;
+    border-radius: 1.5vw;
+    padding: 2vw;
+    -webkit-box-shadow: 0 0.65vw rgba(0, 100, 0, 0.6);
+            box-shadow: 0 0.65vw rgba(0, 100, 0, 0.6);
+  }
+  body .background-img main .form-content form section {
+    font-size: 2.5vw;
+    width: 60vw;
+    margin-top: 4vw;
+  }
+  body .background-img footer {
+    font-size: 3vw;
+    bottom: 1vw;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 427px) {
+  body .background-img main .text span {
+    font-size: 3.5vw;
+  }
+  body .background-img main .text {
+    font-size: 1.5vw;
+  }
+  body .background-img main .form-content .trial {
+    font-size: 2vw;
+    width: 45vw;
+  }
+  body .background-img main .form-content .trial span {
+    font-size: 2vw;
+  }
+  body .background-img main .form-content form input {
+    width: 35vw;
+    height: 4vw;
+  }
+  body .background-img main .form-content form .error-style-input {
+    background-size: 3vw;
+  }
+  body .background-img main .form-content form .success-style-input {
+    background-size: 3vw;
+  }
+  body .background-img main .form-content form .error-style-div {
+    padding-left: 10vw;
+    font-size: 1.7vw;
+  }
+  body .background-img main .form-content form .success-style-div {
+    padding-left: 10vw;
+    font-size: 1.7vw;
+  }
+  body .background-img main .form-content form button {
+    font-size: 2vw;
+    width: 35vw;
+  }
+  body .background-img main .form-content section {
+    font-size: 1.5vw;
+    width: 35vw;
+  }
+  body .background-img footer {
+    font-size: 2vw;
+    bottom: 2vw;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  body .background-img main .text span {
+    font-size: 2.5vw;
+  }
+  body .background-img main .text {
+    font-size: 1.4vw;
+  }
+  body .background-img main .form-content .trial {
+    font-size: 1.5vw;
+    width: 40vw;
+  }
+  body .background-img main .form-content .trial span {
+    font-size: 2vw;
+  }
+  body .background-img main .form-content form input {
+    width: 35vw;
+    height: 3vw;
+    font-size: 1.5vw;
+  }
+  body .background-img main .form-content form input::-webkit-input-placeholder {
+    font-size: 1.5vw;
+  }
+  body .background-img main .form-content form input:-ms-input-placeholder {
+    font-size: 1.5vw;
+  }
+  body .background-img main .form-content form input::-ms-input-placeholder {
+    font-size: 1.5vw;
+  }
+  body .background-img main .form-content form input::placeholder {
+    font-size: 1.5vw;
+  }
+  body .error-style-div {
+    color: red;
+    font-size: 1.5vw;
+    padding-left: 10vw;
+  }
+  body .success-style-div {
+    color: green;
+    font-size: 1.5vw;
+    padding-left: 10vw;
+  }
+  body .background-img main .form-content form button {
+    font-size: 1.7vw;
+    width: 35vw;
+  }
+  body .background-img main .form-content section {
+    font-size: 1.4vw;
+    width: 35vw;
+  }
+  body .background-img footer {
+    font-size: 1.5vw;
+    bottom: 1vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
